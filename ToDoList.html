@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ToDoList</title>
+  <link rel="stylesheet" href="ToDoList.css" />
+</head>
+<body>
+
+  <nav class="Status">
+    <a href="#" class="filter-btn" data-filter="all">All</a>
+    <a href="#" class="filter-btn" data-filter="pending">Pending</a>
+    <a href="#" class="filter-btn" data-filter="completed">Completed</a>
+  </nav>
+
+  <div class="quote-box-top">
+    <img src="assets/1600w-pfr1ir-NfOc.webp" alt="To Do List" />
+  </div>
+
+  <div class="container-box">
+    <input type="text" id="taskName" maxlength="30" placeholder="Enter The Task" />
+    <input type="text" id="taskDesc" placeholder="Task Description (Optional)" maxlength="50" oninput="charCounter()" />
+    <small class="charCount">0/50</small>
+    <button onclick="addTask()" class="buttonAdd">ADD</button>
+  </div>
+
+  <!-- <div class="quote-box-1">
+    <img src="assets/1600w-sePYLQ0b91k-removebg-preview.png" alt="My To Do List" />
+  </div> -->
+
+  <div class="task-container"></div>
+
+  <script src="ToDoList.js"></script>
+</body>
+</html>
