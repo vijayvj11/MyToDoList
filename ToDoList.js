@@ -39,6 +39,7 @@ function addTask() {
     titleInput.value = "";
     descInput.value = "";
     renderTasks();
+    charCounter();
 }
 
 function renderTasks() {
